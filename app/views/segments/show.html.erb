@@ -1,0 +1,6 @@
+<%= content_tag :h1, t('segments.show.heading', {:language => @segment.locale , :key => @segment.key}) -%>
+
+<%= content_tag :div, @segment.content %>
+
+<%= link_to t('segments.back_link'), segments_url -%>
+<%= link_to t('segments.edit_link'), edit_segment_url(@segment) -%>

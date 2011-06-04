@@ -1,0 +1,22 @@
+<%= content_tag :h1, t('segments.index.heading') -%>
+<%= form_for Segment.new do |form| %>
+  <fieldset>
+    <legend><%= t('segments.new.form.legend') -%></legend>
+    <%= render :partial => 'form', :locals => {:form => form} -%>
+  </fieldset>
+<% end -%>
+
+<table>
+  <thead>
+    <tr>
+      <th>Locale</th>
+      <th>Key</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+ 
+  <tbody>
+    <%= render :partial => 'segment_row', :collection => @segments, :as => :segment -%>
+  </tbody
+</table>

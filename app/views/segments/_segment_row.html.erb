@@ -1,0 +1,7 @@
+<tr class="segment">
+  <td class="locale"><%= segment.locale -%></td>
+  <td class="key"><%= segment.key -%></td>
+  <td><%= link_to t('segments.show_link'), segment_url(segment) -%></td>
+  <td><%= link_to t('segments.edit_link'), edit_segment_url(segment) -%></td>
+  <td><%= button_to t('segments.destroy_link'), segment_url(segment), :method => :delete -%></td>
+</tr>

@@ -1,0 +1,4 @@
+<%= content_tag :h1, t('segments.edit.heading', :key => @segment.key, :language => @segment.locale) -%>
+<%= form_for @segment do |form| %>
+  <%= render :partial => 'form', :locals => {:form => form} -%>
+<% end -%>

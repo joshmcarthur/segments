@@ -1,0 +1,17 @@
+en:
+    segments:
+        title: Manage Segments
+        index: 
+            heading: Segments
+        show_link: View
+        edit_link: Edit
+        destroy_link: Delete
+        back_link: Back
+        edit:
+            heading: Editing segment %{key} (%{language})
+        show:
+            heading: %{key} (%{language})
+        new:   
+            form:
+                legend: New Segment
+            

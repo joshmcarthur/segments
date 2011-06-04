@@ -1,0 +1,19 @@
+
+    <p>
+      <%= form.label :locale -%><br />
+      <%= form.select :locale, I18n.available_locales -%>
+    </p>
+   
+    <p>
+      <%= form.label :key -%><br />
+      <%= form.text_field :key -%>
+    </p>
+    
+    <p>
+      <%= form.label :content -%><br />
+      <%= form.text_area :content, :rows => 5 -%>
+    </p>
+    
+    <p>
+      <%= form.submit %>
+    </p>

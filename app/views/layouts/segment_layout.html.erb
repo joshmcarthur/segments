@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title><%= t('segments.title') %></title>
+    <style type="text/css">
+      body { background: #556270; font-size: 16px; font-family: sans-serif;}
+      div.container { margin: 20px auto; padding: 20px; border: solid 1px #666; width: 700px; min-height: 500px; background-color: #FCFBE3; }
+      label { color: #333; font-size: 80%; font-style: italic; padding: 2px 0; }
+      fieldset { border: solid 1px #999; }
+      legend { font-weight: bold; }
+      form.button_to, form.button_to div { display: inline; }
+      a, form.button_to input { margin: 0; padding: 5px; color: #333; text-decoration: none; font-size: 90%; background: none; border: 0; }
+      table { width: 100%; border-collapse: collapse; }
+      th { text-align: left; }
+      td.locale { width: 20%; }
+      td.key { width: 50%; }
+      td { width: 5%; }
+      tr.segment:hover { background-color: #CCC;}
+      a:hover, form.button_to input:hover { background-color: #556270; color: #FFF; }
+    </style>
+  </head>
+  
+  <body>
+    <div class="container">
+      <%= yield %>
+    </div>
+  </body>
+</html>
