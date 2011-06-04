@@ -14,15 +14,33 @@ Gem::Specification.new do |s|
   s.email = %q{joshua.mcarthur@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE.txt",
-    "README.rdoc"
+    "README.md"
   ]
   s.files = [
     ".document",
     "Gemfile",
+    "Gemfile.lock",
     "LICENSE.txt",
-    "README.rdoc",
+    "README.md",
     "Rakefile",
-    "lib/segments.rb"
+    "VERSION",
+    "app/controllers/segments_controller.rb",
+    "app/models/segment.rb",
+    "app/views/layouts/segment_layout.html.erb",
+    "app/views/segments/_form.html.erb",
+    "app/views/segments/_segment_row.html.erb",
+    "app/views/segments/edit.html.erb",
+    "app/views/segments/index.html.erb",
+    "app/views/segments/show.html.erb",
+    "config/boot.rb",
+    "config/locales/en.yml",
+    "config/routes.rb",
+    "lib/engine.rb",
+    "lib/generators/segments/segments_generator.rb",
+    "lib/generators/segments/templates/segments_migration.rb",
+    "lib/segments.rb",
+    "lib/tasks/segments.rake",
+    "segments.gemspec"
   ]
   s.homepage = %q{http://github.com/joshmcarthur/segments}
   s.licenses = ["MIT"]
